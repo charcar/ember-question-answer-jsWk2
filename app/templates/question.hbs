@@ -4,6 +4,13 @@
 
 {{edit-question question=model edit="edit"}}
 
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
 {{new-answer answerSave2="answerSave3" question=model}}
 
+<br>
 <button {{action 'delete' model}}>Delete Question</button>
