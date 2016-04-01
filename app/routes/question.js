@@ -23,7 +23,7 @@ export default Ember.Route.extend({
         return question.save();
       });
       this.transitionTo('question', params.question);
-    }
+    },
 
     delete(question) {
       question.destroyRecord();
