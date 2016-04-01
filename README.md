@@ -1,8 +1,6 @@
 # Question-answer
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
-
+This README outlines the details of collaborating on this Ember application. This small app is an exercise using the JS framework Ember. Follow the instructions below to get it set up.
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -15,7 +13,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/charcar/ember-question-answer-jsWk2.git>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -50,4 +48,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
