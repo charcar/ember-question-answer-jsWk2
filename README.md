@@ -17,6 +17,7 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `ember install emberfire`
 * `ember install ember-bootstrap`
 * `npm install ember-cli`
 
