@@ -9,6 +9,9 @@ Router.map(function() {
   this.route('question' , {path: 'question/:question_id'});
   this.route('categories');
   this.route('about');
+  this.route('lifestyle');
+  this.route('labor');
+  this.route('infant');
 });
 
 export default Router;
