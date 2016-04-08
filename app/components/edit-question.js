@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         inquiry:this.get('inquiry'),
         author:this.get('author'),
         notes:this.get('notes'),
+        category:this.get('category')
       };
       this.set('editQuestionForm', false);
       this.sendAction('edit', question, params);
