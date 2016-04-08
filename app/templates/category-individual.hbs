@@ -1,0 +1,4 @@
+<h3>Questions in the {{model.name}} category:</h3>
+{{#each model.questions as |question|}}
+<h2>{{#link-to 'question' question.id}}{{question.query}}{{/link-to}}</h2>
+{{/each}}

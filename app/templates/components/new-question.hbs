@@ -17,12 +17,11 @@
           {{input value=notes id="notes"}}
         </div>
 
-        <div class="form-group">
-        <label for="category">Category</label>
-          {{#x-select value=category class="select"}}
-            {{#x-option value='lifestyle'}}Lifestyle{{/x-option}}
-            {{#x-option value='labor'}}Labor{{/x-option}}
-            {{#x-option value='infant'}}Infants{{/x-option}}
+        <div class="form-group select">
+          {{#x-select value=category}}
+          {{#each model.categories as |category|}}
+          {{#x-option value=category}}{{category.name}}{{/x-option}}
+          {{/each}}
           {{/x-select}}
         </div>
 

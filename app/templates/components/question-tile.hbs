@@ -1,5 +1,8 @@
 <li>
 
-  {{#link-to 'question' question.id}}{{question.inquiry}} by {{question.author}} {{question-popularity question}}{{/link-to}}
+  {{#link-to 'question' question.id}}
+  <h4>{{question.inquiry}}</h4>
+  <h5> by {{question.author}} in the category {{question.category.name}}</h5>
+  {{question-popularity question}}{{/link-to}}
 
 </li>

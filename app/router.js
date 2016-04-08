@@ -7,11 +7,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('question' , {path: 'question/:question_id'});
-  this.route('categories');
   this.route('about');
-  this.route('lifestyle');
-  this.route('labor');
-  this.route('infant');
+  this.route('category');
+  this.route('category-individual');
 });
 
 export default Router;
