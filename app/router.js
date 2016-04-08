@@ -9,7 +9,8 @@ Router.map(function() {
   this.route('question' , {path: 'question/:question_id'});
   this.route('about');
   this.route('category');
-  this.route('category-individual');
+
+  this.route('catglinks', {path: 'category/:category_id'});
 });
 
 export default Router;
