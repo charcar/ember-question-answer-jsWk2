@@ -5,7 +5,7 @@ export default Ember.Route.extend({
     return Ember.RSVP.hash({
       questions: this.store.findAll('question'),
       answers: this.store.findAll('answer'),
-      categories: this.store.findAll('category')
+      categories: this.store.findAll('category'),
     });
   },
 
@@ -13,6 +13,11 @@ export default Ember.Route.extend({
     saveQuestion3(params) {
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
+      var category = params.category;
+      category.get('questions').addObject(newQuestion);
+      newQuestion.save().then(function() {
+        return category.save();
+      });
       this.transitionTo('index');
     }
   }
