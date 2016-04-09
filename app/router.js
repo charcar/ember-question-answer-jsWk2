@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('category');
 
   this.route('catglinks', {path: 'category/:category_id'});
+  this.route('favorite');
 });
 
 export default Router;

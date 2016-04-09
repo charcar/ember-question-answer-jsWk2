@@ -19,3 +19,6 @@ export default Ember.Component.extend({
     }
   }
 });
+// Did not end up implementing the update category feature. I had a lot of trouble
+// figuring out how to return the correct model that took in the right question
+// but also included all of the categories.

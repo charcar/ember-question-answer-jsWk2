@@ -1,0 +1,4 @@
+{{#each favorites.questions as |question|}}
+  {{#link-to 'question' question.id}}{{question.inquiry}}{{/link-to}}
+  <button {{action "removeFromFavorites" question}}>Remove</button>
+{{/each}}

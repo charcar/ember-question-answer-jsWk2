@@ -4,5 +4,6 @@
   <h4>{{question.inquiry}}</h4>
   <h5> by {{question.author}} in the category {{question.category.name}}</h5>
   {{question-popularity question}}{{/link-to}}
+  <button {{action 'addToFavorites' question}}>Add to Favorites</button>
 
 </li>
