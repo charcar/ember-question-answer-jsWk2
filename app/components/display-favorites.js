@@ -4,8 +4,8 @@ export default Ember.Component.extend({
   favorites: Ember.inject.service(),
 
   actions: {
-    removeFromFavorites(question) {
-      this.get('favorites').remove(question);
+    removeFromFavorites(index) {
+      this.get('favorites').remove(index);
     }
   }
 });

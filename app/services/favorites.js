@@ -7,8 +7,8 @@ export default Ember.Service.extend({
     this.get('questions').pushObject(question);
   },
 
-  remove(question) {
-    this.get('questions').removeObject(question);
+  remove(index) {
+    this.get('questions').removeAt(index);
   },
 
   favoriteCount: Ember.computed('questions.[]', function(){
